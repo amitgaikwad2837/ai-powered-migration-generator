@@ -1,6 +1,5 @@
 {
-  "name": "@public-sdk/ai-powered-migration-generator",
-  "private": true,
+  "name": "@public-sdk/ai-powered-migration-generator"
   "version": "0.1.0",
   "type": "module",
   "description": "Ai Powered Migration Generator starter implementation scaffold",
@@ -26,3 +25,4 @@
     "vitest": "^2.1.8"
   }
 }
+
