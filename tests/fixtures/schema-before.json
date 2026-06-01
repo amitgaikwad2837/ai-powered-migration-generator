@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "tables": [
+    {
+      "name": "users",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int",
+          "primaryKey": true,
+          "autoIncrement": true
+        },
+        {
+          "name": "email",
+          "type": "varchar(255)",
+          "nullable": false
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp",
+          "default": "CURRENT_TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "name": "posts",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int",
+          "primaryKey": true,
+          "autoIncrement": true
+        },
+        {
+          "name": "user_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "title",
+          "type": "varchar(255)",
+          "nullable": false
+        },
+        {
+          "name": "content",
+          "type": "text",
+          "nullable": true
+        }
+      ]
+    }
+  ]
+}

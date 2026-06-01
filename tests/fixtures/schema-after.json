@@ -1,0 +1,93 @@
+{
+  "version": "2.0.0",
+  "tables": [
+    {
+      "name": "users",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int",
+          "primaryKey": true,
+          "autoIncrement": true
+        },
+        {
+          "name": "email",
+          "type": "varchar(255)",
+          "nullable": false
+        },
+        {
+          "name": "name",
+          "type": "varchar(255)",
+          "nullable": true
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp",
+          "default": "CURRENT_TIMESTAMP"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp",
+          "nullable": true
+        }
+      ]
+    },
+    {
+      "name": "posts",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int",
+          "primaryKey": true,
+          "autoIncrement": true
+        },
+        {
+          "name": "user_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "title",
+          "type": "varchar(500)",
+          "nullable": false
+        },
+        {
+          "name": "content",
+          "type": "longtext",
+          "nullable": true
+        },
+        {
+          "name": "status",
+          "type": "varchar(20)",
+          "default": "'draft'"
+        }
+      ]
+    },
+    {
+      "name": "comments",
+      "columns": [
+        {
+          "name": "id",
+          "type": "int",
+          "primaryKey": true,
+          "autoIncrement": true
+        },
+        {
+          "name": "post_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "user_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "text",
+          "type": "text",
+          "nullable": false
+        }
+      ]
+    }
+  ]
+}
