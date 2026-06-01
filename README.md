@@ -1,13 +1,20 @@
 ﻿# AI-Powered Migration Generator
 
+Generate SQL migration plans from schema changes with review-friendly output.
+
+## 📦 Registry & Repository
+
+- **npm**: [@amitgaikwad37/ai-powered-migration-generator](https://www.npmjs.com/package/@amitgaikwad37/ai-powered-migration-generator)
+- **GitHub**: [amitgaikwad2837/ai-powered-migration-generator](https://github.com/amitgaikwad2837/ai-powered-migration-generator)
+
 ## Overview
 
-Generate SQL migration plans from schema changes with review-friendly output.
+This SDK analyzes database schema changes and generates optimized SQL migrations (CREATE/ALTER/DROP) with rollback scripts. Supports multiple databases and integrates seamlessly into DevOps pipelines.
 
 ## Installation
 
 ~~~bash
-npm install @public-sdk/ai-powered-migration-generator
+npm install @amitgaikwad37/ai-powered-migration-generator
 ~~~
 
 ## Quick Start
